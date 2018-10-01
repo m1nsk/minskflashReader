@@ -14,8 +14,6 @@ public class FlashReader extends TimerTask {
 
     private static final String PATH_TO_STORAGE = "/home/minsk/device/";
 
-    private final static int FOLDER_QTY = 7;
-
     private final static Set<String> imgTypes = new HashSet<>(Arrays.asList("jpg", "png"));
 
     public static void main(String[] args) {
