@@ -39,7 +39,7 @@ public class FlashReader extends TimerTask {
     private void inspectUsbFolder() throws IOException {
         File usbDir =  new File(USB_FOLDER_PATH);
         if (usbDir.isDirectory()){
-            List<File> usbs = Arrays.stream(usbDir.listFiles()).filter(File::isDirectory).collect(Collectors.toList());.
+            List<File> usbs = Arrays.stream(usbDir.listFiles()).filter(File::isDirectory).collect(Collectors.toList());
             usbs.forEach(usb -> {
                 File[] files = usb.listFiles((file1, s) -> s.endsWith(".properties"));
                 for (File file : files) {
